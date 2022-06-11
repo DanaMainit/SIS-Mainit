@@ -41,15 +41,15 @@ class Home(tk.Frame):
         label.place(x=230,y=20)
 
         home = tk.Button(self, text="HOME",font=("Century Gothic",16,"bold"),bd=0, width = 10, bg="Maroon", fg="white", command=lambda: controller.show(Home))
-        home.place(x=380,y=300)
+        home.place(x=380,y=200)
         home.config(cursor= "hand2")
         
         course = tk.Button(self, text="COURSES",font=("Century Gothic",16,"bold"),bd=0, width = 10, bg="Maroon", fg="white", command=lambda: controller.show(Courses))
-        course.place(x=568,y=300)
+        course.place(x=380,y=300)
         course.config(cursor= "hand2")
         
         students = tk.Button(self, text="REGISTRATION",font=("Century Gothic",16,"bold"),bd=0, width = 13, bg="Maroon", fg="white", command=lambda: controller.show(Students))
-        students.place(x=750,y=300)
+        students.place(x=380,y=400)
         students.config(cursor= "hand2")
 
         students = tk.Button(self, text="EXIT",font=("Century Gothic",15,"bold"),bd=0, width = 10, bg="Maroon", fg="white", command=iExit)
